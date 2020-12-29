@@ -1,5 +1,7 @@
 # Rust Server Frameworks
 
+The aim of this repo was be experiment using the Rust language the monorepo style.
+
 ## Prerequisites
 
 - Install rustup
@@ -16,14 +18,26 @@ cargo build # or cargo build --release
 cargo build -p hyper-api
 ```
 
+- Build all modules
+
+```bash
+cargo build # or cargo build --release
+```
+
+- Build specific modules
+
+```bash
+cargo build -p <module name> # example: cargo build -p hyper-api
+```
+
 ## Actix
 
-TODO
+TODO Dockerfile and documentation
 
 ## Hyper
 
-TODO
+TODO Dockerfile and documentation
 
 ## Tide
 
-TODO
+TODO Dockerfile and documentation
