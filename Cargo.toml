@@ -1,0 +1,17 @@
+[workspace]
+version = "0.0.1"
+authors = ["Alexandre SAKER"]
+description = "..."
+readme = "README.md"
+repository = "https://github.com/alexsaker/rust-webframeworks-test"
+license = "MIT"
+keywords = ["cli"]
+categories = ["poc"]
+publish = false
+edition = "2020"
+members = [
+    "hyper-api",
+    "actix-api",
+    "tide-api",
+    "models",
+]
