@@ -10,7 +10,7 @@ async fn main() -> tide::Result<()> {
     let mut app = tide::new();
     app.at("/hello").get(greet);
     app.at("/hello/:name").get(greet);
-    app.listen("127.0.0.1:8090").await?;
+    app.listen("0.0.0.0:8090").await?;
     Ok(())
 }
 // #[derive(Debug, Deserialize)]

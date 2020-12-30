@@ -30,7 +30,7 @@ async fn main() -> std::io::Result<()> {
             .route("/hello/{name}", web::get().to(specific_hello))
             .route("/echo", web::post().to(echo))
     })
-    .bind("127.0.0.1:8089")?
+    .bind("0.0.0.0:8089")?
     .run()
     .await
 }
