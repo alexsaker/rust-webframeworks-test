@@ -11,6 +11,22 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```
 
+- Add rustfmt
+
+```bash
+rustup component add rustfmt
+# Whenever you need to format the workspace coe
+cargo fmt
+```
+
+## Usage
+
+- Checking workspace
+
+```bash
+cargo check
+```
+
 - Build all apis
 
 ```bash

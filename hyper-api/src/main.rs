@@ -1,9 +1,9 @@
-use std::convert::Infallible;
-use std::net::SocketAddr;
-use hyper::{Body, Request, Response, Server};
 use hyper::service::{make_service_fn, service_fn};
+use hyper::{Body, Request, Response, Server};
 use models::User;
 use serde_json;
+use std::convert::Infallible;
+use std::net::SocketAddr;
 async fn hello(_req: Request<Body>) -> Result<Response<Body>, Infallible> {
     let json = r#"
         {
@@ -14,12 +14,11 @@ async fn hello(_req: Request<Body>) -> Result<Response<Body>, Infallible> {
     "#;
 
     let user: User = serde_json::from_str(json).unwrap();
-    
+
     let hello = "Hello";
     let body = format!("{},{}", hello, user.username);
     Ok(Response::new(Body::from(body)))
 }
-
 
 #[tokio::main]
 async fn main() {
