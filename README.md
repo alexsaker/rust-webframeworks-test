@@ -75,8 +75,8 @@ cargo build -p actix-api
 ### Build and Run Docker image
 
 ```bash
-docker build ./actix-api -f ./actix-api/Dockerfile -t asaker/actix-api:1.0.0
-docker run -p 8089:8089 asaker/actix-api:1.0.0
+docker build ./actix-api -f ./actix-api/Dockerfile -t <Container Registry User>/actix-api:1.0.0
+docker run -p 8089:8089 <Container Registry User>/actix-api:1.0.0
 ```
 
 ---
@@ -98,8 +98,8 @@ cargo build -p hyper-api
 ### Build and Run Docker image
 
 ```bash
-docker build ./hyper-api -f ./hyper-api/Dockerfile -t asaker/hyper-api:1.0.0
-docker run -p 3000:3000 asaker/hyper-api:1.0.0
+docker build ./hyper-api -f ./hyper-api/Dockerfile -t <Container Registry User>/hyper-api:1.0.0
+docker run -p 3000:3000 <Container Registry User>/hyper-api:1.0.0
 ```
 
 ---
@@ -121,6 +121,6 @@ cargo build -p tide-api
 ### Build and Run Docker image
 
 ```bash
-docker build ./tide-api -f ./tide-api/Dockerfile -t asaker/tide-api:1.0.0
-docker run -p 8090:8090 asaker/tide-api:1.0.0
+docker build ./tide-api -f ./tide-api/Dockerfile -t <Container Registry User>/tide-api:1.0.0
+docker run -p 8090:8090 <Container Registry User>/tide-api:1.0.0
 ```
