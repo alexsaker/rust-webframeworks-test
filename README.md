@@ -48,12 +48,42 @@ cargo build -p <module name> # example: cargo build -p hyper-api
 
 ## Actix
 
-TODO Dockerfile and documentation
+### Build
+
+```bash
+cargo build -p actix-api
+```
+
+### Run
+
+```bash
+./target/debug/actix-api
+```
 
 ## Hyper
 
-TODO Dockerfile and documentation
+### Build
+
+```bash
+cargo build -p hyper-api
+```
+
+### Run
+
+```bash
+./target/debug/hyper-api
+```
 
 ## Tide
 
-TODO Dockerfile and documentation
+### Build
+
+```bash
+cargo build -p tide-api
+```
+
+### Run
+
+```bash
+./target/debug/tide-api
+```
