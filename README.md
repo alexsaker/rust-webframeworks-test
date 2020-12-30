@@ -2,16 +2,18 @@
 
 The aim of this repo was be experiment using the Rust language the monorepo style.
 
+---
+
 ## Prerequisites
 
-- Install rustup
+### Install rustup
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```
 
-- Add rustfmt
+### Add rustfmt
 
 ```bash
 rustup component add rustfmt
@@ -19,32 +21,42 @@ rustup component add rustfmt
 cargo fmt
 ```
 
+---
+
 ## Usage
 
-- Checking workspace
+### Checking workspace
 
 ```bash
 cargo check
 ```
 
-- Build all apis
+### Build all apis
 
 ```bash
 cargo build # or cargo build --release
 cargo build -p hyper-api
 ```
 
-- Build all modules
+### Build all modules
 
 ```bash
 cargo build # or cargo build --release
 ```
 
-- Build specific modules
+### Build specific modules
 
 ```bash
 cargo build -p <module name> # example: cargo build -p hyper-api
 ```
+
+### Testing workspace
+
+```bash
+cargo test
+```
+
+---
 
 ## Actix
 
@@ -60,6 +72,8 @@ cargo build -p actix-api
 ./target/debug/actix-api
 ```
 
+---
+
 ## Hyper
 
 ### Build
@@ -73,6 +87,8 @@ cargo build -p hyper-api
 ```bash
 ./target/debug/hyper-api
 ```
+
+---
 
 ## Tide
 
