@@ -1,4 +1,12 @@
 [workspace]
+
+members = [
+    "hyper-api",
+    "actix-api",
+    "tide-api",
+    "models",
+]
+[workspace.metadata]
 version = "0.0.1"
 authors = ["Alexandre SAKER"]
 description = "..."
@@ -9,9 +17,3 @@ keywords = ["cli"]
 categories = ["poc"]
 publish = false
 edition = "2020"
-members = [
-    "hyper-api",
-    "actix-api",
-    "tide-api",
-    "models",
-]
