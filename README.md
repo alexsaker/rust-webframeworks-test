@@ -1,6 +1,6 @@
 # Rust Server Frameworks
 
-The aim of this repo was be experiment using the Rust language the monorepo style.
+The aim of this repo was to experiment Rust web frameworks using cargo workspaces.
 
 ---
 
